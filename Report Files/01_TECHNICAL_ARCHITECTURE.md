@@ -221,7 +221,7 @@ Total Score = Diversification (0-30)
 
 **Parameters:**
 - Market drift: +0.02%/day (~5% annual)
-- Daily volatility: 1.5% standard deviation
+- Daily volatility: uniform +/-1.5% bound per move (sigma ~0.87%)
 - Market correlation: 40% shared movement
 - Seeded random for reproducibility
 

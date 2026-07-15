@@ -147,7 +147,7 @@ confidence = 0.50 + (weight / overweightThreshold) * 0.15
 
 **How We Make It Realistic:**
 - Market drift: +0.02%/day (~5% annual return)
-- Daily volatility: 1.5% (typical for diversified equity)
+- Daily volatility: uniform +/-1.5% bound per move (sigma ~0.87%)
 - Market correlation: 40% shared movement (realistic)
 - Seeded random: Same portfolio = same backtest
 

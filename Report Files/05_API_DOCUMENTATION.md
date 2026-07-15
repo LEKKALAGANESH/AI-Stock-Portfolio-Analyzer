@@ -361,7 +361,7 @@ function generateMockPriceHistory(
 | Parameter | Value | Description |
 |-----------|-------|-------------|
 | Market Drift | +0.02%/day | Upward bias (~5% annual) |
-| Daily Volatility | 1.5% | Standard deviation |
+| Daily Volatility | +/-1.5% | Uniform bound per move (sigma ~0.87%) |
 | Market Correlation | 40% | Shared movement factor |
 | Random Seed | 12345 | For reproducibility |
 

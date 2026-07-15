@@ -25,7 +25,8 @@ export function generateMockPriceHistory(rows, days = 60) {
   // Market trend: slight upward bias (0.02% daily = ~5% annually)
   const marketDrift = 0.0002;
 
-  // Daily volatility: 1.5% standard deviation (realistic for stocks)
+  // Daily volatility: uniform +/-1.5% bound on each move (sigma ~0.87%, i.e. 0.015/sqrt(3)).
+  // This is a bound, not a standard deviation: moves are uniform, not normally distributed.
   const dailyVolatility = 0.015;
 
   // Simulate market correlation: all stocks share some common movement
